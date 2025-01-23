@@ -10,11 +10,13 @@ const ac = document.querySelectorAll('i')
 
 ac.forEach( e =>{
     e.addEventListener('click',()=>{
-        if(count % 2 === 0){
-            e.innerHTML = `<div class="boduc black"></div>`
-        }else{
-            e.innerHTML = `<div class="boduc white"></div>`
+        if(!e.innerHTML){
+            if(count % 2 === 0){
+                e.innerHTML = `<div class="boduc black"></div>`
+            }else{
+                e.innerHTML = `<div class="boduc white"></div>`
+            }
+            count++
         }
-        count++
     })
 })
