@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+.con{
+    background-color: rgb(206, 162, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    height: 630px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.board {
+  width: 600px;
+  height: 600px;
+  background: 
+    linear-gradient(to right, black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+  background-size: 30px 30px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doll{
+    width: 570px;
+    height: 570px;
+    display: grid;
+    grid-template-rows: repeat(19, 1fr);
+    grid-template-columns: repeat(19, 1fr);
+    transform: translate(1px, 1px);
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i .boduc{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.white{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.black{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
